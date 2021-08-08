@@ -258,15 +258,12 @@ def main(arguments):
                         logger.info("Get class %02d/%02d: OK" % (
                             class_days[class_data.week_day].day, 
                             class_days[class_data.week_day].month))
-                        return 0
                     else:
                         logger.info("Get class %02d/%02d: ERROR" % (
                             class_days[class_data.week_day].day, 
                             class_days[class_data.week_day].month))
-                        return 1
                 else:
                     logger.error("Error searching for class day")
-                    return 1
 
 
 if __name__ == '__main__':
